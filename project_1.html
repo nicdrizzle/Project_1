@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;      
+            font-family: Copperplate, Papyrus, fantasy;
+                
+        }
+        #top {
+            background-color: black;
+            height: 250%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        .flex-container {
+          display: flex;
+          background-color: #6CACE4;
+          color: white;
+        }
+        
+        .flex-container > div {
+          background-color: #6CACE4;
+          margin: 10px;
+          padding: 20px;
+          font-size: 30px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      
+        img {
+            max-width: 100%;
+            padding-left: 20px;
+        }
+      
+      .image {
+        flex-basis: 300%;
+        }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 800px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+
+    .copyright {
+    float:left;
+    text-align: left;
+   }
+   
+   .social {
+    float:right;
+    text-align: right;
+   }
+
+   .text {
+       font-size: 60;
+   }
+
+   #footer {
+       color: white;
+   }
+
+    </style>
+</head>
+
+<body>
+        
+    <p style="text-align: center;">
+        <img src="AAlogoblack.JPG" alt="logo" style="width: 450px;height;450px;">
+    </p>
+            
+    <div class="flex-container">
+        <div>THE STORY</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="container">
+        <div class="image">
+            <img src="bbq.JPG"alt="about" style="width: 450px;height;450px;">
+        </div>
+        <div class="text">
+            <section>
+                <p style="color:white">
+                    Although being born in Argentina, I grew up here in Sydney. Cooking Asado is an Argentinian custom that is passed from the elders to the youth. I have always been passionate about the history of my culture and with that grew my enthusiasm for such a special craftsmanship.
+                    <br>
+                    <br>
+                    Asados are cooked to celebrate life, death, new jobs, new opportunities, and even love. It brings people together, whether they are close to you or even people you may have just met. Ultimately my purpose and what I want to achieve is social connections with good food and long lasting memories.
+                    <br>
+                    <br>
+                    It's not just cooking meat on a bbq, it's a culture, passion, history and a story.
+                    <br>
+                    <br>
+
+                    Join my experience!
+                    <br>
+                    <br>
+
+                    Aussie Asador
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+           
+    <div class="flex-container">
+        <div>COMIDA</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <center><h2>PACKS</h2></center>
+        <br>
+        <br>
+        <p>ASADOR PACK..............................$60</p>
+        <li>2 smoked chorizos</li>
+        <li>2 parrilleros chorizos</li>
+        <li>2kg of beef spare ribs</li>
+        <li>side of chimichurri</li>
+
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <P>DINNER PACK..............................$35</P>
+        <li>1 smoked chorizos</li>
+        <li>1 parrilleros chorizos</li>
+        <li>2 portions of asado beef spare ribs</li>
+        <li>baked potato topped with mum's mushroom sauce</li>
+        <li>spanish salad</li>
+        <li>side of chimichurri</li>
+        <li>bread roll</li>
+        <li>can of soft drink</li>
+
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <center><h2>ARGENTINIAN SIGNATURES</h2></center>
+        <br>
+        <br>
+        <p>CHORIPAN................................$10</p>
+        <p>popular argentinian sandwich in a roll with chorizo, lettuce, tomato, mayo and mum's chimichurri</p>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <P>EMPANADAS</P>
+        <p>fried pastry filled with beef mince, capsicum, onions, spring onions, olives, boiled eggs and secret herbs</p>
+        <li> 1.....$5</li>
+        <li> 6.....$24</li>
+        <li> 12...$48</li>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>MUM'S CHIMICHURRI</p>
+        <p>typical argentinian table condiment for grilled meat</p>
+        <li>small jar.....$12</li>
+        <li>large jar.....$20</li>
+
+    
+      </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="flex-container">
+        <div>GALLERY</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="gallery">
+        <a target="_blank" href="freshcuts.JPG">
+            <img src="freshcuts.JPG" alt="roll" width="600" height="400">
+        </a>
+        <div class="desc">FRESH CUTS</div>
+        </div>
+
+        <div class="gallery">
+        <a target="_blank" href="dinner.jpg">
+            <img src="dinner.jpg" alt="roll" width="600" height="400">
+        </a>
+        <div class="desc">DINNER PACK</div>
+        </div>
+
+        <div class="gallery">
+        <a target="_blank" href="asador.jpg">
+            <img src="asador.jpg" alt="roll" width="600" height="400">
+        </a>
+        <div class="desc">ASADOR PACK</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="chori.jpg">
+            <img src="chori.jpg" alt="roll" width="600" height="400">
+          </a>
+          <div class="desc">CHORIPAN</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="emp.jpg">
+            <img src="emp.jpg" alt="pastry" width="600" height="400">
+          </a>
+          <div class="desc">EMPANADAS</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="chimi.jpg">
+            <img src="chimi.jpg" alt="sauce" width="600" height="400">
+          </a>
+          <div class="desc">CHIMICHURRI</div>
+        </div>
+        
+        <div class="gallery">
+            <a target="_blank" href="charcoal.JPG">
+              <img src="charcoal.JPG" alt="sauce" width="600" height="400">
+            </a>
+            <div class="desc">ARGENTINIAN CHARCOAL</div>
+          </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="PARILLA.JPG">
+              <img src="PARILLA.JPG" alt="sauce" width="600" height="400">
+            </a>
+            <div class="desc">PARILLA</div>
+          </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="AUSSIE">
+              <img src="AUSSIE.JPG" alt="sauce" width="600" height="400">
+            </a>
+            <div class="desc">AUSSIE ASADOR</div>
+          </div>
+        </div>
+    
+    
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!--Footer-->
+<div id="footer">
+    <h3 class="copyright">AUSSIE ASADOR 2021</h3>
+    <a href="https://www.instagram.com/aussie.asador/" target="_blank">
+    <h3 class="social" style="color:white">FOLLOW US<img src="insta.png" alt="Instagram" height="30px"></h3>
+    <div style="clear: both"></div>
+    </a>
+</div>
+</body>
+</html>
